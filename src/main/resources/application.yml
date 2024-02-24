@@ -2,10 +2,10 @@ spring:
   application:
     name: user-storage
   datasource:
-    url: jdbc:mysql://localhost:3306/user-storage
+    url: jdbc:mysql://database_host:database_port/database_name
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: baxset8830
+    username: database_username
+    password: database_password
   jpa:
     hibernate:
       ddl-auto: create
