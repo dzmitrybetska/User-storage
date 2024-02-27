@@ -2,10 +2,10 @@ spring:
   application:
     name: user-storage
   datasource:
-    url: jdbc:mysql://database_host:database_port/database_name
+    url: ${DATABASE_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: database_username
-    password: database_password
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: create
